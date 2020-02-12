@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+import Counter from "./Counter";
 import "./App.css";
 
 function App() {
@@ -86,6 +86,7 @@ function App() {
       <div className="cards" key={data.id}>
         <img src={data.thumbnail} alt={data.title} className="cardImg" />
         <h1 className="cardName">{data.title}</h1>
+        <Counter max={10} min={1} />
       </div>
     );
   });
